@@ -29,9 +29,14 @@ enum class HoomanButtonVariant {
 
 // Button Sizes
 enum class HoomanButtonSize(val fontSize: Int, val paddingV: Int, val paddingH: Int, val minHeight: Int) {
-    Large(17, 20, 32, 56),
-    Medium(16, 16, 24, 44),
-    Small(15, 12, 20, 36)
+//    Large(17, 20, 32, 56),
+//    Medium(16, 16, 24, 44),
+//    Small(15, 12, 20, 36)
+
+    Large(16, 0, 0, 56),
+    Medium(14, 0, 0, 44),
+    Small(12, 0, 0, 36)
+
 }
 
 @Composable
