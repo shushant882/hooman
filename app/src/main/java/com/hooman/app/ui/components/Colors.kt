@@ -25,6 +25,11 @@ fun Color.Companion.fromHex(hex: String): Color {
         else -> Color.Black
     }
 }
+val HoomanOrange = Color(0xFFE95744)
+val HoomanWhite = Color(0xFFFDFCFB)
+val logoColor: Color
+    @Composable
+    get() = if (isSystemInDarkTheme()) HoomanWhite else HoomanOrange
 
 // Main color object
 object HoomanColors {

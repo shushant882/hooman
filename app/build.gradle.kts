@@ -51,6 +51,8 @@ dependencies {
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.compose.foundation)
+    implementation(libs.androidx.compose.material.core)
+    implementation(libs.androidx.compose.ui.tooling.preview)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -74,6 +76,7 @@ dependencies {
 
     // Hilt for Dependency Injection
     implementation(libs.hilt.android)
+    debugImplementation(libs.androidx.compose.ui.tooling)
     ksp(libs.hilt.compiler)
 
     // Retrofit for Networking
@@ -84,7 +87,7 @@ dependencies {
     // Room for Local Database
     implementation(libs.bundles.room)
     ksp(libs.room.compiler)
-
+    implementation("androidx.compose.material3:material3-window-size-class")
     // Coil for Image Loading
     implementation(libs.coil)
 

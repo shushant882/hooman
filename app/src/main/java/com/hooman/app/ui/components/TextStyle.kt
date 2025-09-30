@@ -32,7 +32,6 @@ private fun hoomanTextStyle(
     lineHeight = lineHeight.sp,
     letterSpacing = letterSpacing.sp
 )
-
 // Typography Specification for the Hooman App Theme
 val HoomanTypography = Typography(
     displayLarge = hoomanTextStyle(FontWeight.Bold, 48, 42.0, -0.5),
