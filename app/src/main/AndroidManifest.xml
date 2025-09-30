@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Hooman"
         tools:targetApi="31">
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.main.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.Hooman">
             <intent-filter>

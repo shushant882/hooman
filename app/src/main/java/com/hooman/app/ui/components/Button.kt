@@ -1,4 +1,4 @@
-package com.hooman.app.ui.theme
+package com.hooman.app.ui.components
 
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.BorderStroke
@@ -21,7 +21,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Star // Using a placeholder ico
-import androidx.compose.ui.hapticfeedback.HapticFeedbackType
 
 // Button Variants
 enum class HoomanButtonVariant {
@@ -97,7 +96,7 @@ fun HoomanButton(
                 indication = null,
                 interactionSource = remember { MutableInteractionSource() }
             ) {
-                haptic.performHapticFeedback(HapticFeedbackType.TextHandleMove)
+                haptic.performHapticFeedback(androidx.compose.ui.hapticfeedback.HapticFeedbackType.TextHandleMove)
                 onClick()
             },
         contentAlignment = Alignment.Center
