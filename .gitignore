@@ -1,87 +1,43 @@
-# === Android / Kotlin / Gradle ===
-# Built application files
+# Build output
+/build/
+/.gradle/
+/.kotlin/
+captures/
 *.apk
-*.ap_
 *.aab
+*.jar
+*.aar
 
-# Kotlin metadata / module
-*.kotlin_module
+# IDE & System files
+/.idea/
+*.iml
+*.iws
+.DS_Store
+.cxx/
+.externalNativeBuild/
+cmake-build-debug/
+cmake-build-release/
 
-# Gradle build folders
-/.gradle
-**/build/
+# Profiling & debugging artifacts
+*.hprof
+*.snapshot
 
-# Gradle wrapper - IMPORTANT: keep wrapper files tracked if present
-# (we don't ignore gradle/wrapper so the jar/properties stay in repo)
-
-# Local configuration (machine-specific)
+# Local properties & secrets
 local.properties
-/local.properties
-
-# Keystores and signing configs (never commit private keys)
 *.jks
 *.keystore
 *.p12
 *.pem
-keystore.properties
 key.properties
+keystore.properties
 signing.properties
 
-# === IDE / Editor ===
-# IntelliJ / Android Studio
-/.idea/
-*.iml
-*.iws
-
-# VS Code
-.vscode/
-
-# === Native build / NDK ===
-.externalNativeBuild/
-.cxx/
-
-# === Outputs & intermediate files ===
-captures/
-outputs/
-*/outputs/
+# Generated native libs
 obj/
-generated/
+libs/
 
-# === Logs / temp / caches ===
-*.log
-*.log.*
-*.tmp
-*.temp
-*.swp
-*~.nib
-
-# === OS files ===
-.DS_Store
-Thumbs.db
-ehthumbs.db
-
-# === Packaging / distribution ===
-*.aar
-*.jar
-*.war
-
-# === Temporary / test artifacts ===
-.gradle/
-tmp/
-temp/
-
-# === Environment / secrets ===
-.env
-.env.*
-.env.local
-*.env
-
-# === Misc ===
-# proguard/mapping files (optional: ignore if you don't want mappings in repo)
-# /app/build/outputs/mapping/
-# Uncomment the following if you never want to store mapping files:
-# **/mapping/release/mapping.txt
-
-# Keep Gradle wrapper files tracked explicitly if you accidentally ignore gradle/
+# Keep Gradle Wrapper files
 !gradle/wrapper/gradle-wrapper.jar
 !gradle/wrapper/gradle-wrapper.properties
+!gradlew
+!gradlew.bat

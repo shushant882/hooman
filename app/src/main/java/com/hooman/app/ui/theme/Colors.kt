@@ -1,4 +1,4 @@
-package com.hooman.app.ui.components
+package com.hooman.app.ui.theme
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
