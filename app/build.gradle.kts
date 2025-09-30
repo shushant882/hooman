@@ -55,13 +55,17 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    // --- ADD THESE DEPENDENCIES FOR MVVM ---
+    // --- ADDITIONAL DEPENDENCIES FOR THE APP ---
 
     // Compose
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.material3)
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.runtime)
+    implementation(libs.androidx.hilt.navigation.compose)
+
+    implementation(libs.compose.destinations.core)
+    ksp(libs.compose.destinations.ksp)
 
     // AndroidX Lifecycle
     implementation(libs.androidx.lifecycle.viewmodel)
