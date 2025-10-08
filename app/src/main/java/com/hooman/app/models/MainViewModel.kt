@@ -1,7 +1,8 @@
-package com.hooman.app.ui.main
+package com.hooman.app.models
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.hooman.app.ui.main.MainState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
